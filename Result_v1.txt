@@ -1,0 +1,423 @@
+Creating new Ultralytics Settings v0.0.6 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+🚀 2.5D YOLO System
+1. Training
+2. Testing
+3. Auto (Test if model exists, otherwise train)
+🔥 2.5D YOLO Training Started!
+📍 Modified model not found. Creating automatically...
+Base model: yolo11m.pt → Modified model: ./yolo11m_25d_modified.pt
+🔧 Modifying YOLO model to 9 channels...
+Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11m.pt to 'yolo11m.pt'...
+100%|██████████| 38.8M/38.8M [00:00<00:00, 128MB/s] 
+Found Conv2d layer at model.0.conv: Conv2d(3, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+Successfully modified model.0.conv: 3 -> 9 channels
+✅ Model successfully modified for 9 input channels
+✅ Modified model saved successfully: ./yolo11m_25d_modified.pt
+Model loaded: ./yolo11m_25d_modified.pt
+Device: cuda
+Loss function: Custom loss
+
+🚀 2.5D YOLO Training Started!
+Epochs: 50, Batch size: 4, Learning rate: 0.001
+[TRAIN] Found .npy files: 363
+[TRAIN] Found label files: 363
+[VAL] Found .npy files: 88
+[VAL] Found label files: 88
+Training batches: 90
+Validation batches: 22
+
+📊 Training started - 2025-05-27 16:29:42
+
+=== Epoch 1/50 ===
+Epoch 1 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.2981, Avg=3.3257, LR=0.00100, Tgts=4, Errs=0]
+Epoch 1 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.91it/s, Val Loss=1.5694, Avg=1.5870, Tgts=4, Errs=0]
+Training loss: 3.322661 (Custom)
+Validation loss: 1.588318
+Learning rate: 0.000999
+🏆 New best performance! Validation loss: 1.588318
+Best model saved: ./yolo_25d_training_results/weights/best_model.pt
+
+=== Epoch 2/50 ===
+Epoch 2 Training: 100%|██████████| 90/90 [00:43<00:00,  2.07it/s, Loss=3.3388, Avg=3.3205, LR=0.00100, Tgts=4, Errs=0]
+Epoch 2 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.88it/s, Val Loss=1.5656, Avg=1.5721, Tgts=4, Errs=0]
+Training loss: 3.319743 (Custom)
+Validation loss: 1.573980
+Learning rate: 0.000996
+🏆 New best performance! Validation loss: 1.573980
+Best model saved: ./yolo_25d_training_results/weights/best_model.pt
+
+=== Epoch 3/50 ===
+Epoch 3 Training: 100%|██████████| 90/90 [00:43<00:00,  2.08it/s, Loss=3.3008, Avg=3.3181, LR=0.00100, Tgts=4, Errs=0]
+Epoch 3 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.94it/s, Val Loss=1.5465, Avg=1.5603, Tgts=4, Errs=0]
+Training loss: 3.316851 (Custom)
+Validation loss: 1.561997
+Learning rate: 0.000991
+🏆 New best performance! Validation loss: 1.561997
+Best model saved: ./yolo_25d_training_results/weights/best_model.pt
+
+=== Epoch 4/50 ===
+Epoch 4 Training: 100%|██████████| 90/90 [00:43<00:00,  2.08it/s, Loss=3.3451, Avg=3.3137, LR=0.00099, Tgts=4, Errs=0]
+Epoch 4 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.96it/s, Val Loss=1.5673, Avg=1.5822, Tgts=4, Errs=0]
+Training loss: 3.315014 (Custom)
+Validation loss: 1.583391
+Learning rate: 0.000984
+
+=== Epoch 5/50 ===
+Epoch 5 Training: 100%|██████████| 90/90 [00:43<00:00,  2.09it/s, Loss=3.3679, Avg=3.3145, LR=0.00098, Tgts=4, Errs=0]
+Epoch 5 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.93it/s, Val Loss=1.5611, Avg=1.5803, Tgts=4, Errs=0]
+Training loss: 3.314033 (Custom)
+Validation loss: 1.582523
+Learning rate: 0.000976
+Training curves saved to: ./yolo_25d_training_results/training_curves.png
+
+=== Epoch 6/50 ===
+Epoch 6 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.2109, Avg=3.3129, LR=0.00098, Tgts=4, Errs=0]
+Epoch 6 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.85it/s, Val Loss=1.5591, Avg=1.5730, Tgts=4, Errs=0]
+Training loss: 3.312758 (Custom)
+Validation loss: 1.575447
+Learning rate: 0.000965
+
+=== Epoch 7/50 ===
+Epoch 7 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.2688, Avg=3.3142, LR=0.00097, Tgts=4, Errs=0]
+Epoch 7 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.89it/s, Val Loss=1.5414, Avg=1.5559, Tgts=4, Errs=0]
+Training loss: 3.312362 (Custom)
+Validation loss: 1.557658
+Learning rate: 0.000953
+🏆 New best performance! Validation loss: 1.557658
+Best model saved: ./yolo_25d_training_results/weights/best_model.pt
+
+=== Epoch 8/50 ===
+Epoch 8 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.2802, Avg=3.3095, LR=0.00095, Tgts=4, Errs=0]
+Epoch 8 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.86it/s, Val Loss=1.5611, Avg=1.5716, Tgts=4, Errs=0]
+Training loss: 3.310120 (Custom)
+Validation loss: 1.573387
+Learning rate: 0.000939
+
+=== Epoch 9/50 ===
+Epoch 9 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.3091, Avg=3.3091, LR=0.00094, Tgts=4, Errs=0]
+Epoch 9 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.83it/s, Val Loss=1.5413, Avg=1.5536, Tgts=4, Errs=0]
+Training loss: 3.307959 (Custom)
+Validation loss: 1.555478
+Learning rate: 0.000923
+🏆 New best performance! Validation loss: 1.555478
+Best model saved: ./yolo_25d_training_results/weights/best_model.pt
+
+=== Epoch 10/50 ===
+Epoch 10 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.2213, Avg=3.3078, LR=0.00092, Tgts=4, Errs=0]
+Epoch 10 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.85it/s, Val Loss=1.5597, Avg=1.5813, Tgts=4, Errs=0]
+Training loss: 3.308185 (Custom)
+Validation loss: 1.583664
+Learning rate: 0.000905
+Checkpoint saved: ./yolo_25d_training_results/weights/checkpoint_epoch_10.pt
+Training curves saved to: ./yolo_25d_training_results/training_curves.png
+
+=== Epoch 11/50 ===
+Epoch 11 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.2594, Avg=3.3067, LR=0.00091, Tgts=4, Errs=0]
+Epoch 11 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.87it/s, Val Loss=1.5484, Avg=1.5633, Tgts=4, Errs=0]
+Training loss: 3.308352 (Custom)
+Validation loss: 1.565334
+Learning rate: 0.000886
+
+=== Epoch 12/50 ===
+Epoch 12 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.2859, Avg=3.3044, LR=0.00089, Tgts=4, Errs=0]
+Epoch 12 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.83it/s, Val Loss=1.5693, Avg=1.5874, Tgts=4, Errs=0]
+Training loss: 3.306690 (Custom)
+Validation loss: 1.589913
+Learning rate: 0.000866
+
+=== Epoch 13/50 ===
+Epoch 13 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.3187, Avg=3.3061, LR=0.00087, Tgts=4, Errs=0]
+Epoch 13 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.84it/s, Val Loss=1.5641, Avg=1.5831, Tgts=4, Errs=0]
+Training loss: 3.306091 (Custom)
+Validation loss: 1.585079
+Learning rate: 0.000844
+
+=== Epoch 14/50 ===
+Epoch 14 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.3184, Avg=3.3055, LR=0.00084, Tgts=4, Errs=0]
+Epoch 14 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.85it/s, Val Loss=1.5434, Avg=1.5527, Tgts=4, Errs=0]
+Training loss: 3.306800 (Custom)
+Validation loss: 1.554152
+Learning rate: 0.000821
+🏆 New best performance! Validation loss: 1.554152
+Best model saved: ./yolo_25d_training_results/weights/best_model.pt
+
+=== Epoch 15/50 ===
+Epoch 15 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.3960, Avg=3.3061, LR=0.00082, Tgts=4, Errs=0]
+Epoch 15 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.84it/s, Val Loss=1.5580, Avg=1.5644, Tgts=4, Errs=0]
+Training loss: 3.305890 (Custom)
+Validation loss: 1.566043
+Learning rate: 0.000796
+Training curves saved to: ./yolo_25d_training_results/training_curves.png
+
+=== Epoch 16/50 ===
+Epoch 16 Training: 100%|██████████| 90/90 [00:44<00:00,  2.03it/s, Loss=3.2170, Avg=3.3048, LR=0.00080, Tgts=4, Errs=0]
+Epoch 16 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.83it/s, Val Loss=1.5699, Avg=1.5866, Tgts=4, Errs=0]
+Training loss: 3.305751 (Custom)
+Validation loss: 1.588586
+Learning rate: 0.000770
+
+=== Epoch 17/50 ===
+Epoch 17 Training: 100%|██████████| 90/90 [00:44<00:00,  2.03it/s, Loss=3.3318, Avg=3.3061, LR=0.00077, Tgts=4, Errs=0]
+Epoch 17 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.86it/s, Val Loss=1.5508, Avg=1.5581, Tgts=4, Errs=0]
+Training loss: 3.304663 (Custom)
+Validation loss: 1.559852
+Learning rate: 0.000743
+
+=== Epoch 18/50 ===
+Epoch 18 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.3052, Avg=3.3034, LR=0.00074, Tgts=4, Errs=0]
+Epoch 18 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.82it/s, Val Loss=1.5636, Avg=1.5765, Tgts=4, Errs=0]
+Training loss: 3.304919 (Custom)
+Validation loss: 1.578839
+Learning rate: 0.000716
+
+=== Epoch 19/50 ===
+Epoch 19 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.3287, Avg=3.3043, LR=0.00072, Tgts=4, Errs=0]
+Epoch 19 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.84it/s, Val Loss=1.5643, Avg=1.5798, Tgts=4, Errs=0]
+Training loss: 3.303171 (Custom)
+Validation loss: 1.582196
+Learning rate: 0.000687
+
+=== Epoch 20/50 ===
+Epoch 20 Training: 100%|██████████| 90/90 [00:44<00:00,  2.03it/s, Loss=3.2486, Avg=3.3053, LR=0.00069, Tgts=4, Errs=0]
+Epoch 20 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.86it/s, Val Loss=1.5413, Avg=1.5510, Tgts=4, Errs=0]
+Training loss: 3.303922 (Custom)
+Validation loss: 1.552542
+Learning rate: 0.000658
+🏆 New best performance! Validation loss: 1.552542
+Checkpoint saved: ./yolo_25d_training_results/weights/checkpoint_epoch_20.pt
+Best model saved: ./yolo_25d_training_results/weights/best_model.pt
+Training curves saved to: ./yolo_25d_training_results/training_curves.png
+
+=== Epoch 21/50 ===
+Epoch 21 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.3242, Avg=3.3056, LR=0.00066, Tgts=4, Errs=0]
+Epoch 21 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.82it/s, Val Loss=1.5485, Avg=1.5559, Tgts=4, Errs=0]
+Training loss: 3.303965 (Custom)
+Validation loss: 1.557392
+Learning rate: 0.000628
+
+=== Epoch 22/50 ===
+Epoch 22 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.3294, Avg=3.3002, LR=0.00063, Tgts=4, Errs=0]
+Epoch 22 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.82it/s, Val Loss=1.5528, Avg=1.5669, Tgts=4, Errs=0]
+Training loss: 3.303865 (Custom)
+Validation loss: 1.568608
+Learning rate: 0.000598
+
+=== Epoch 23/50 ===
+Epoch 23 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.3387, Avg=3.3047, LR=0.00060, Tgts=4, Errs=0]
+Epoch 23 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.87it/s, Val Loss=1.5545, Avg=1.5624, Tgts=4, Errs=0]
+Training loss: 3.302854 (Custom)
+Validation loss: 1.563916
+Learning rate: 0.000567
+
+=== Epoch 24/50 ===
+Epoch 24 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.3181, Avg=3.3036, LR=0.00057, Tgts=4, Errs=0]
+Epoch 24 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.84it/s, Val Loss=1.5545, Avg=1.5615, Tgts=4, Errs=0]
+Training loss: 3.303243 (Custom)
+Validation loss: 1.563349
+Learning rate: 0.000536
+
+=== Epoch 25/50 ===
+Epoch 25 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.2808, Avg=3.3021, LR=0.00054, Tgts=4, Errs=0]
+Epoch 25 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.82it/s, Val Loss=1.5555, Avg=1.5672, Tgts=4, Errs=0]
+Training loss: 3.302773 (Custom)
+Validation loss: 1.568764
+Learning rate: 0.000505
+Training curves saved to: ./yolo_25d_training_results/training_curves.png
+
+=== Epoch 26/50 ===
+Epoch 26 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.2955, Avg=3.3022, LR=0.00050, Tgts=4, Errs=0]
+Epoch 26 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.87it/s, Val Loss=1.5608, Avg=1.5700, Tgts=4, Errs=0]
+Training loss: 3.301528 (Custom)
+Validation loss: 1.571809
+Learning rate: 0.000474
+
+=== Epoch 27/50 ===
+Epoch 27 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.2872, Avg=3.3000, LR=0.00047, Tgts=4, Errs=0]
+Epoch 27 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.85it/s, Val Loss=1.5497, Avg=1.5574, Tgts=4, Errs=0]
+Training loss: 3.301272 (Custom)
+Validation loss: 1.558883
+Learning rate: 0.000443
+
+=== Epoch 28/50 ===
+Epoch 28 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.3122, Avg=3.3009, LR=0.00044, Tgts=4, Errs=0]
+Epoch 28 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.84it/s, Val Loss=1.5507, Avg=1.5583, Tgts=4, Errs=0]
+Training loss: 3.300883 (Custom)
+Validation loss: 1.559722
+Learning rate: 0.000412
+
+=== Epoch 29/50 ===
+Epoch 29 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.2779, Avg=3.3021, LR=0.00041, Tgts=4, Errs=0]
+Epoch 29 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.84it/s, Val Loss=1.5529, Avg=1.5639, Tgts=4, Errs=0]
+Training loss: 3.301997 (Custom)
+Validation loss: 1.565516
+Learning rate: 0.000382
+
+=== Epoch 30/50 ===
+Epoch 30 Training: 100%|██████████| 90/90 [00:44<00:00,  2.03it/s, Loss=3.3528, Avg=3.3018, LR=0.00038, Tgts=4, Errs=0]
+Epoch 30 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.84it/s, Val Loss=1.5406, Avg=1.5509, Tgts=4, Errs=0]
+Training loss: 3.300954 (Custom)
+Validation loss: 1.552325
+Learning rate: 0.000352
+🏆 New best performance! Validation loss: 1.552325
+Checkpoint saved: ./yolo_25d_training_results/weights/checkpoint_epoch_30.pt
+Best model saved: ./yolo_25d_training_results/weights/best_model.pt
+Training curves saved to: ./yolo_25d_training_results/training_curves.png
+
+=== Epoch 31/50 ===
+Epoch 31 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.3334, Avg=3.3002, LR=0.00035, Tgts=4, Errs=0]
+Epoch 31 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.84it/s, Val Loss=1.5430, Avg=1.5555, Tgts=4, Errs=0]
+Training loss: 3.301223 (Custom)
+Validation loss: 1.557130
+Learning rate: 0.000323
+
+=== Epoch 32/50 ===
+Epoch 32 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.3228, Avg=3.3017, LR=0.00032, Tgts=4, Errs=0]
+Epoch 32 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.84it/s, Val Loss=1.5434, Avg=1.5538, Tgts=4, Errs=0]
+Training loss: 3.302143 (Custom)
+Validation loss: 1.555237
+Learning rate: 0.000294
+
+=== Epoch 33/50 ===
+Epoch 33 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.2449, Avg=3.2994, LR=0.00029, Tgts=4, Errs=0]
+Epoch 33 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.87it/s, Val Loss=1.5510, Avg=1.5597, Tgts=4, Errs=0]
+Training loss: 3.301233 (Custom)
+Validation loss: 1.561512
+Learning rate: 0.000267
+
+=== Epoch 34/50 ===
+Epoch 34 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.2655, Avg=3.3016, LR=0.00027, Tgts=4, Errs=0]
+Epoch 34 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.82it/s, Val Loss=1.5478, Avg=1.5612, Tgts=4, Errs=0]
+Training loss: 3.301651 (Custom)
+Validation loss: 1.562742
+Learning rate: 0.000240
+
+=== Epoch 35/50 ===
+Epoch 35 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.3746, Avg=3.2988, LR=0.00024, Tgts=4, Errs=0]
+Epoch 35 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.78it/s, Val Loss=1.5552, Avg=1.5679, Tgts=4, Errs=0]
+Training loss: 3.298888 (Custom)
+Validation loss: 1.569783
+Learning rate: 0.000214
+Training curves saved to: ./yolo_25d_training_results/training_curves.png
+
+=== Epoch 36/50 ===
+Epoch 36 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.2739, Avg=3.3025, LR=0.00021, Tgts=4, Errs=0]
+Epoch 36 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.82it/s, Val Loss=1.5452, Avg=1.5563, Tgts=4, Errs=0]
+Training loss: 3.301152 (Custom)
+Validation loss: 1.558045
+Learning rate: 0.000189
+
+=== Epoch 37/50 ===
+Epoch 37 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.2815, Avg=3.2983, LR=0.00019, Tgts=4, Errs=0]
+Epoch 37 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.83it/s, Val Loss=1.5481, Avg=1.5589, Tgts=4, Errs=0]
+Training loss: 3.299804 (Custom)
+Validation loss: 1.560490
+Learning rate: 0.000166
+
+=== Epoch 38/50 ===
+Epoch 38 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.2700, Avg=3.3040, LR=0.00017, Tgts=4, Errs=0]
+Epoch 38 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.82it/s, Val Loss=1.5488, Avg=1.5607, Tgts=4, Errs=0]
+Training loss: 3.300430 (Custom)
+Validation loss: 1.562493
+Learning rate: 0.000144
+
+=== Epoch 39/50 ===
+Epoch 39 Training: 100%|██████████| 90/90 [00:44<00:00,  2.03it/s, Loss=3.3345, Avg=3.3005, LR=0.00014, Tgts=4, Errs=0]
+Epoch 39 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.85it/s, Val Loss=1.5515, Avg=1.5611, Tgts=4, Errs=0]
+Training loss: 3.300991 (Custom)
+Validation loss: 1.562773
+Learning rate: 0.000124
+
+=== Epoch 40/50 ===
+Epoch 40 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.2763, Avg=3.3015, LR=0.00012, Tgts=4, Errs=0]
+Epoch 40 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.82it/s, Val Loss=1.5532, Avg=1.5668, Tgts=4, Errs=0]
+Training loss: 3.299801 (Custom)
+Validation loss: 1.568500
+Learning rate: 0.000105
+Checkpoint saved: ./yolo_25d_training_results/weights/checkpoint_epoch_40.pt
+Training curves saved to: ./yolo_25d_training_results/training_curves.png
+
+=== Epoch 41/50 ===
+Epoch 41 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.2941, Avg=3.2989, LR=0.00010, Tgts=4, Errs=0]
+Epoch 41 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.84it/s, Val Loss=1.5525, Avg=1.5608, Tgts=4, Errs=0]
+Training loss: 3.299747 (Custom)
+Validation loss: 1.562334
+Learning rate: 0.000087
+
+=== Epoch 42/50 ===
+Epoch 42 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.3128, Avg=3.3013, LR=0.00009, Tgts=4, Errs=0]
+Epoch 42 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.90it/s, Val Loss=1.5488, Avg=1.5584, Tgts=4, Errs=0]
+Training loss: 3.300913 (Custom)
+Validation loss: 1.559975
+Learning rate: 0.000071
+
+=== Epoch 43/50 ===
+Epoch 43 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.3551, Avg=3.3001, LR=0.00007, Tgts=4, Errs=0]
+Epoch 43 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.86it/s, Val Loss=1.5551, Avg=1.5643, Tgts=4, Errs=0]
+Training loss: 3.300037 (Custom)
+Validation loss: 1.566037
+Learning rate: 0.000057
+
+=== Epoch 44/50 ===
+Epoch 44 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.3335, Avg=3.2993, LR=0.00006, Tgts=4, Errs=0]
+Epoch 44 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.85it/s, Val Loss=1.5484, Avg=1.5592, Tgts=4, Errs=0]
+Training loss: 3.299208 (Custom)
+Validation loss: 1.560849
+Learning rate: 0.000045
+
+=== Epoch 45/50 ===
+Epoch 45 Training: 100%|██████████| 90/90 [00:44<00:00,  2.04it/s, Loss=3.3492, Avg=3.3014, LR=0.00004, Tgts=4, Errs=0]
+Epoch 45 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.91it/s, Val Loss=1.5518, Avg=1.5608, Tgts=4, Errs=0]
+Training loss: 3.299765 (Custom)
+Validation loss: 1.562371
+Learning rate: 0.000034
+Training curves saved to: ./yolo_25d_training_results/training_curves.png
+
+=== Epoch 46/50 ===
+Epoch 46 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.2829, Avg=3.2982, LR=0.00003, Tgts=4, Errs=0]
+Epoch 46 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.86it/s, Val Loss=1.5496, Avg=1.5592, Tgts=4, Errs=0]
+Training loss: 3.299695 (Custom)
+Validation loss: 1.560823
+Learning rate: 0.000026
+
+=== Epoch 47/50 ===
+Epoch 47 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.2595, Avg=3.3017, LR=0.00003, Tgts=4, Errs=0]
+Epoch 47 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.86it/s, Val Loss=1.5514, Avg=1.5595, Tgts=4, Errs=0]
+Training loss: 3.301601 (Custom)
+Validation loss: 1.561114
+Learning rate: 0.000019
+
+=== Epoch 48/50 ===
+Epoch 48 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.3213, Avg=3.2993, LR=0.00002, Tgts=4, Errs=0]
+Epoch 48 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.88it/s, Val Loss=1.5506, Avg=1.5597, Tgts=4, Errs=0]
+Training loss: 3.299779 (Custom)
+Validation loss: 1.561304
+Learning rate: 0.000014
+
+=== Epoch 49/50 ===
+Epoch 49 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.2918, Avg=3.3012, LR=0.00001, Tgts=4, Errs=0]
+Epoch 49 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.87it/s, Val Loss=1.5506, Avg=1.5592, Tgts=4, Errs=0]
+Training loss: 3.300225 (Custom)
+Validation loss: 1.560837
+Learning rate: 0.000011
+
+=== Epoch 50/50 ===
+Epoch 50 Training: 100%|██████████| 90/90 [00:43<00:00,  2.05it/s, Loss=3.3175, Avg=3.3015, LR=0.00001, Tgts=4, Errs=0]
+Epoch 50 Validation: 100%|██████████| 22/22 [00:07<00:00,  2.83it/s, Val Loss=1.5508, Avg=1.5595, Tgts=4, Errs=0]
+Training loss: 3.299259 (Custom)
+Validation loss: 1.561107
+Learning rate: 0.000010
+Checkpoint saved: ./yolo_25d_training_results/weights/checkpoint_epoch_50.pt
+Training curves saved to: ./yolo_25d_training_results/training_curves.png
+
+🎯 Training completed!
+Best validation loss: 1.552325
+Loss function used: Custom
+Final model saved to: ./yolo_25d_training_results/weights
+Training curves saved to: ./yolo_25d_training_results/training_curves.png
+Training log saved: ./yolo_25d_training_results/training_log.json
+
+🎉 Training completed!
+Best performance model: ./yolo_25d_training_results/weights/best_model.pt
+You can now use this model for predictions!
