@@ -1,0 +1,22 @@
+📁 multi-gpu-yolo-training/
+├── 📄 multi_gpu_train.py           # Main training script (provided)
+├── 📄 requirements.txt             # Python dependencies
+├── 📄 run_training.sh              # Bash script with examples
+├── 📄 README.md                    # Complete documentation
+├── 📄 setup.py                     # Optional: for pip installation
+├── 📁 data/                        # Dataset directory
+│   └── 📄 yolo_dataset_2_5d_byu.zip # Your dataset (to be added)
+├── 📁 configs/                     # Optional: training configs
+│   ├── 📄 high_performance.yaml
+│   ├── 📄 memory_efficient.yaml
+│   └── 📄 default.yaml
+└── 📁 utils/                       # Optional: utility scripts
+    ├── 📄 validate_model.py
+    └── 📄 inference.py
+
+ESSENTIAL FILES NEEDED:
+✅ multi_gpu_train.py (you have this)
+❌ requirements.txt (needed)
+❌ run_training.sh (needed)  
+❌ README.md (needed)
+❌ yolo_dataset_2_5d_byu.zip (your data)
