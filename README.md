@@ -4,4 +4,9 @@
 - Used ONNX export with custom multi-thread imagee loading , increasing 104s (starter notebook) to 36s for 3 tomograms.  
  
 
-What I learned -
+# What I learned 
+
+- Learned to use multi-threading and multi-processing in python and their advantages.
+- Got to know about various strengths and flaws in current YOLO11m by analyzing feature maps for different augmented images.
+  
+
