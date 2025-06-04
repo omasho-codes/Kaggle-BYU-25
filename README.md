@@ -7,6 +7,8 @@
 # What I learned 
 
 - Learned to use multi-threading and multi-processing in python and their advantages.
-- Got to know about various strengths and flaws in current YOLO11m by analyzing feature maps for different augmented images.
+- Got to know about various strengths and flaws in current YOLO11m architecture by analyzing feature maps for different augmented images.
+- Developed post-processing steps for merging to 2D inferences by YOLO back to 3D by analyzing scatter plots of 3D coordinates in train     set.
+
   
 
