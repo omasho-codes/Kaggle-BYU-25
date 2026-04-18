@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Model weights & large binaries
+*.pt
+*.pth
+*.onnx
+*.engine
+*.h5
+*.ckpt
+*.safetensors
+
+# Local data
+data/
+datasets/
+runs/
+wandb/
+lightning_logs/
+outputs/
+
+# Benchmark and figure outputs (regenerated)
+benchmarks/*.png
+docs/figures/gradcam_*.png
+
+# System
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Coverage / pytest
+.coverage
+htmlcov/
+.pytest_cache/
+.ruff_cache/
+
+# Kaggle credentials
+kaggle.json
